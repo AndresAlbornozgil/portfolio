@@ -17,11 +17,17 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="page-shell">
+    <div class="page-shell" id="top">
       <header class="topbar">
-        <div class="brand-lockup" aria-label="GravForge home">
+        <a class="brand-lockup" href="#top" aria-label="GravForge home">
           <div class="wordmark-only" aria-label="GravForge title"><span class="grav-text">Grav</span><span class="forge-text">Forge</span></div>
-        </div>
+        </a>
+
+        <nav class="header-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#work">Workshop</a>
+          <a href="#contact">Contact</a>
+        </nav>
       </header>
 
       <main class="content">

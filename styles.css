@@ -44,12 +44,33 @@ a {
 
 .topbar {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  justify-content: space-between;
+  align-items: baseline;
   gap: 18px;
   width: 100%;
   padding: 12px 0 18px;
   border-bottom: 1px solid var(--line);
+}
+
+.header-nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  gap: 28px;
+  flex-wrap: wrap;
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: rgba(243, 245, 246, 0.82);
+}
+
+.header-nav a {
+  transition: color 0.2s ease;
+}
+
+.header-nav a:hover,
+.header-nav a:focus-visible {
+  color: var(--ember-soft);
 }
 
 .brand-lockup {
@@ -57,6 +78,7 @@ a {
   align-items: center;
   gap: 14px;
   min-width: 0;
+  text-decoration: none;
 }
 
 .wordmark-only {
