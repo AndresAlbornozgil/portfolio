@@ -1,0 +1,34 @@
+<svg width="860" height="220" viewBox="0 0 860 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="steel" x1="140" y1="20" x2="720" y2="180" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F7F8"/>
+      <stop offset="0.17" stop-color="#C3CDD4"/>
+      <stop offset="0.38" stop-color="#F3F5F6"/>
+      <stop offset="0.57" stop-color="#6B737A"/>
+      <stop offset="0.76" stop-color="#EFF3F6"/>
+      <stop offset="1" stop-color="#CAD1D7"/>
+    </linearGradient>
+    <radialGradient id="ember" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(590 90) rotate(90) scale(85 170)">
+      <stop stop-color="#FFD8A8"/>
+      <stop offset="0.18" stop-color="#FFB65C"/>
+      <stop offset="0.54" stop-color="#FF7B13"/>
+      <stop offset="1" stop-color="#5C2100" stop-opacity="0.1"/>
+    </radialGradient>
+  </defs>
+
+  <g opacity="0.98">
+    <circle cx="110" cy="110" r="92" stroke="url(#steel)" stroke-width="22"/>
+    <circle cx="110" cy="110" r="48" stroke="#020304" stroke-width="8"/>
+    <path d="M142 160V64H220L265 110L220 156H142V160Z" fill="url(#steel)" stroke="#15191D" stroke-width="10" stroke-linejoin="round"/>
+    <path d="M220 64L275 110L238 110L198 70H142V64H220Z" fill="#D8DEE2" opacity="0.72"/>
+    <path d="M152 74L204 74L186 96L152 96V74Z" fill="#FF7A12" opacity="0.82"/>
+    <path d="M247 94L310 94L310 118L247 118V94Z" fill="#FF7A12" opacity="0.84"/>
+    <circle cx="268" cy="106" r="50" fill="url(#ember)"/>
+    <circle cx="268" cy="106" r="20" fill="#FFD7A4" fill-opacity="0.8"/>
+  </g>
+
+  <g>
+    <text x="350" y="128" fill="#ECEFF1" font-size="94" font-weight="800" letter-spacing="-6" font-family="Georgia, 'Times New Roman', serif">GRAV</text>
+    <text x="572" y="128" fill="#FF6A00" font-size="94" font-weight="800" letter-spacing="-6" font-family="Georgia, 'Times New Roman', serif">FORGE</text>
+  </g>
+</svg>

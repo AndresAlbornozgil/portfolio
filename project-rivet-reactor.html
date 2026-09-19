@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rivet Reactor | Rookwell Brassworks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(180deg, #0d0908, #17110d);
+        color: #f5efe6;
+      }
+      .project-page {
+        width: min(960px, calc(100% - 32px));
+        margin: 28px auto 40px;
+        padding: 32px 28px 36px;
+        border: 1px solid rgba(231, 199, 132, 0.18);
+        border-radius: 16px;
+        background: rgba(19, 14, 11, 0.9);
+        box-shadow: 0 22px 48px rgba(0,0,0,0.2);
+      }
+      .project-page h1 {
+        font-family: "Cinzel", serif;
+        font-size: clamp(2.2rem, 4vw, 3.6rem);
+        margin: 18px 0 10px;
+      }
+      .project-page .kicker {
+        color: #e7c784;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.62rem;
+      }
+      .project-hero {
+        height: 260px;
+        border: 1px solid rgba(231, 199, 132, 0.12);
+        border-radius: 14px;
+        margin: 22px 0 26px;
+        background:
+          radial-gradient(circle at 30% 30%, rgba(201,151,92,0.26), transparent 28%),
+          linear-gradient(135deg, #2f211a, #120d0b 62%, #201915);
+      }
+      .project-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+      }
+      .project-layout p,
+      .project-layout li {
+        color: #d1baa1;
+        line-height: 1.8;
+      }
+      .project-layout ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      .info-box {
+        border: 1px solid rgba(231, 199, 132, 0.14);
+        border-radius: 12px;
+        padding: 18px 18px 12px;
+        background: rgba(28, 21, 17, 0.6);
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 18px;
+        color: #e7c784;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+      }
+      @media (max-width: 700px) {
+        .project-layout { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project-page">
+      <div class="kicker">Prototype</div>
+      <h1>Rivet Reactor</h1>
+      <div class="project-hero"></div>
+      <div class="project-layout">
+        <div>
+          <p>
+            Rivet Reactor was conceived as a compact energy display system for field
+            diagnostics, crafted to feel like a relic from a machine age while still
+            functioning with clarity and precision.
+          </p>
+          <p>
+            The concept resolved around modular control surfaces, durable metal forms,
+            and a measured visual rhythm that made operation feel intentional and calm.
+          </p>
+        </div>
+        <aside class="info-box">
+          <div class="kicker">Build notes</div>
+          <ul>
+            <li>CAD-driven layout</li>
+            <li>Brass and steel fabrication</li>
+            <li>Thermal response testing</li>
+          </ul>
+        </aside>
+      </div>
+      <a class="back-link" href="index.html">← Back to portfolio</a>
+    </div>
+  </body>
+</html>

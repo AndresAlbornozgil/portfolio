@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ironwing Harness | Rookwell Brassworks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Inter", sans-serif;
+        background: linear-gradient(180deg, #0d0908, #17110d);
+        color: #f5efe6;
+      }
+      .project-page {
+        width: min(960px, calc(100% - 32px));
+        margin: 28px auto 40px;
+        padding: 32px 28px 36px;
+        border: 1px solid rgba(231, 199, 132, 0.18);
+        border-radius: 16px;
+        background: rgba(19, 14, 11, 0.9);
+        box-shadow: 0 22px 48px rgba(0,0,0,0.2);
+      }
+      .project-page h1 {
+        font-family: "Cinzel", serif;
+        font-size: clamp(2.2rem, 4vw, 3.6rem);
+        margin: 18px 0 10px;
+      }
+      .project-page .kicker {
+        color: #e7c784;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        font-size: 0.62rem;
+      }
+      .project-hero {
+        height: 260px;
+        border: 1px solid rgba(231, 199, 132, 0.12);
+        border-radius: 14px;
+        margin: 22px 0 26px;
+        background:
+          radial-gradient(circle at 68% 30%, rgba(136,82,48,0.3), transparent 26%),
+          linear-gradient(135deg, #241c18, #120d0b 62%, #1d1513);
+      }
+      .project-layout {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 22px;
+      }
+      .project-layout p,
+      .project-layout li {
+        color: #d1baa1;
+        line-height: 1.8;
+      }
+      .project-layout ul {
+        margin: 0;
+        padding-left: 20px;
+      }
+      .info-box {
+        border: 1px solid rgba(231, 199, 132, 0.14);
+        border-radius: 12px;
+        padding: 18px 18px 12px;
+        background: rgba(28, 21, 17, 0.6);
+      }
+      .back-link {
+        display: inline-block;
+        margin-top: 18px;
+        color: #e7c784;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        font-size: 0.6rem;
+      }
+      @media (max-width: 700px) {
+        .project-layout { grid-template-columns: 1fr; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="project-page">
+      <div class="kicker">System</div>
+      <h1>Ironwing Harness</h1>
+      <div class="project-hero"></div>
+      <div class="project-layout">
+        <div>
+          <p>
+            This wearable engineering frame was designed to support balance, tactile
+            feedback, and clean operator control in demanding physical tasks.
+          </p>
+          <p>
+            The challenge was to combine ergonomic clarity with an unmistakable industrial
+            character, resulting in a form that feels ritualistic, practical, and deeply crafted.
+          </p>
+        </div>
+        <aside class="info-box">
+          <div class="kicker">Build notes</div>
+          <ul>
+            <li>Ergonomic fit testing</li>
+            <li>Operator feedback mapping</li>
+            <li>Modular utility frame</li>
+          </ul>
+        </aside>
+      </div>
+      <a class="back-link" href="index.html">← Back to portfolio</a>
+    </div>
+  </body>
+</html>
