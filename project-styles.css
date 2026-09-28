@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--bg);
+  color: #f3f5f6;
+}
+
+.project-page {
+  width: min(1080px, calc(100% - 32px));
+  margin: 28px auto 40px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel-strong);
+}
+
+.project-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.back-link,
+.deployment-link {
+  color: var(--ember-soft);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.back-link:hover,
+.back-link:focus-visible,
+.deployment-link:hover,
+.deployment-link:focus-visible {
+  color: #f3f5f6;
+}
+
+.project-kicker {
+  margin: 0;
+  color: var(--ember-soft);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.project-page h1 {
+  margin: 14px 0 0;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 4rem);
+  line-height: 1.1;
+}
+
+.project-hero {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 7;
+  display: block;
+  margin: 28px 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(250px, 0.8fr);
+  gap: 28px;
+}
+
+.project-description {
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+  line-height: 1.65;
+}
+
+.project-description + .project-description {
+  margin-top: 16px;
+}
+
+.project-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.info-box {
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.info-box h2 {
+  margin: 0 0 12px;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.info-box ul {
+  margin: 0;
+  padding-left: 18px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.deployment-link {
+  display: inline-flex;
+  justify-content: center;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 157, 77, 0.45);
+  border-radius: 6px;
+}
+
+@media (max-width: 700px) {
+  .project-page {
+    width: min(100% - 24px, 1080px);
+    margin: 12px auto 24px;
+    padding: 20px;
+  }
+
+  .project-topbar,
+  .project-layout {
+    align-items: flex-start;
+    grid-template-columns: 1fr;
+  }
+
+  .project-hero {
+    aspect-ratio: 4 / 3;
+    margin: 22px 0;
+  }
+}
