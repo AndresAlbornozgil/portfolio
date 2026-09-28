@@ -389,6 +389,33 @@ a {
   margin-bottom: 0;
 }
 
+.footer-contact {
+  width: 100%;
+}
+
+.footer-contact > .eyebrow {
+  margin-bottom: 10px;
+}
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.footer-logo {
+  width: 76px;
+  height: 76px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .footer-panel h2 {
   margin: 0;
   max-width: 620px;
