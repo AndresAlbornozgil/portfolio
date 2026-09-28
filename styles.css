@@ -251,12 +251,14 @@ a {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px;
 }
 
 .project-card {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  aspect-ratio: 1;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 12px;
@@ -277,7 +279,8 @@ a {
 
 .thumb {
   position: relative;
-  height: 180px;
+  min-height: 0;
+  flex: 1 1 auto;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
   background: linear-gradient(180deg, rgba(28, 27, 25, 1), rgba(11, 10, 9, 1));
 }
@@ -454,10 +457,6 @@ a {
     gap: 20px;
   }
 
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
   .footer-panel {
     flex-direction: column;
     align-items: flex-start;
@@ -477,5 +476,11 @@ a {
   .forge-mark {
     width: 52px;
     height: 52px;
+  }
+}
+
+@media (max-width: 500px) {
+  .project-grid {
+    grid-template-columns: 1fr;
   }
 }
