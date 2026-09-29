@@ -193,7 +193,6 @@ a {
   flex-direction: column;
   gap: 22px;
   padding-top: 22px;
-  flex: 1;
 }
 
 .panel {
@@ -234,12 +233,13 @@ a {
 }
 
 .intro-copy {
-  margin: 0 auto;
-  max-width: 760px;
+  margin: 0;
   font-size: clamp(1.15rem, 2vw, 1.6rem);
   line-height: 1.55;
   color: var(--muted);
-  text-align: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-align: left;
 }
 
 .section-head {
@@ -403,7 +403,7 @@ a {
   justify-content: space-between;
   align-items: center;
   gap: 18px;
-  margin-top: auto;
+  margin-top: 22px;
   margin-bottom: 0;
 }
 
