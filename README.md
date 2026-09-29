@@ -1,5 +1,5 @@
-# portfolio
+## portfolio
 Portfolio containing my projects
 
-## Deployed
+# Deployed
 https://andresalbornozgil.github.io/portfolio/
