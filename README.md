@@ -1,2 +1,2 @@
 # portfolio
-Portfolio containing my projects https://andresalbornozgil.github.io/portfolio/
+Deployed at https://andresalbornozgil.github.io/portfolio/
