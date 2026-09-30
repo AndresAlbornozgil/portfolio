@@ -313,7 +313,7 @@ a {
   scroll-snap-type: x mandatory;
   scrollbar-width: none;
   scroll-behavior: smooth;
-  touch-action: pan-x;
+  touch-action: manipulation;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -620,7 +620,7 @@ a {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    touch-action: pan-x;
+    touch-action: manipulation;
   }
 
   .project-card {
@@ -641,7 +641,7 @@ a {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    touch-action: pan-x;
+    touch-action: manipulation;
   }
 
   .project-card {
