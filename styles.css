@@ -630,7 +630,7 @@ a {
   }
 }
 
-@media (min-width: 901px) and (hover: hover) and (pointer: fine) {
+@media (min-width: 901px) {
   .project-navigator {
     display: flex;
   }
@@ -641,7 +641,7 @@ a {
     overflow-x: auto;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
-    touch-action: auto;
+    touch-action: pan-x;
   }
 
   .project-card {
