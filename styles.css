@@ -613,10 +613,6 @@ a {
     align-items: flex-start;
   }
 
-  .project-navigator {
-    display: none;
-  }
-
   .project-grid {
     display: grid;
     grid-auto-flow: column;
@@ -720,10 +716,6 @@ a {
 }
 
 @media (max-width: 500px) {
-  .work-panel .section-head {
-    align-items: flex-start;
-  }
-
   .contact-card {
     flex-direction: column;
     align-items: center;
