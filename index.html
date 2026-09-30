@@ -15,6 +15,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="page-shell" id="top">
@@ -41,11 +42,18 @@
 
         <section id="work" class="panel work-panel">
           <div class="section-head">
-            <p class="eyebrow">Workshop</p>
-            <h2>My Projects</h2>
+            <div>
+              <p class="eyebrow">Workshop</p>
+              <h2>My Projects</h2>
+            </div>
+            <div class="project-navigator" aria-label="Project navigation">
+              <button class="project-nav-button" type="button" data-project-previous aria-label="Previous projects" title="Previous projects">&larr;</button>
+              <button class="project-nav-button" type="button" data-project-next aria-label="Next projects" title="Next projects">&rarr;</button>
+            </div>
           </div>
 
-          <div class="project-grid">
+          <div class="project-carousel">
+            <div class="project-grid">
             <a class="project-card" href="project-rivet-reactor.html">
               <div class="thumb">
                 <img class="project-thumbnail" src="assets/GravForge_Image_2.png" alt="" />
@@ -85,6 +93,17 @@
                 <h3>Under Construction</h3>
               </div>
             </a>
+            </div>
+          </div>
+          <div class="project-swipe-cue can-go-next" aria-hidden="true">
+            <span class="project-swipe-direction project-swipe-previous">
+              <span></span>
+              <span></span>
+            </span>
+            <span class="project-swipe-direction project-swipe-next">
+              <span></span>
+              <span></span>
+            </span>
           </div>
         </section>
       </main>
