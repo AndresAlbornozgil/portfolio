@@ -291,12 +291,14 @@ a {
   transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.project-nav-button:hover,
-.project-nav-button:focus-visible {
+.project-nav-button:hover {
   border-color: var(--ember-soft);
   background: rgba(255, 106, 0, 0.1);
   color: var(--ember-soft);
-  outline: 1px solid var(--ember-soft);
+}
+
+.project-nav-button:focus-visible {
+  outline: 1px solid var(--steel-2);
   outline-offset: 3px;
 }
 
